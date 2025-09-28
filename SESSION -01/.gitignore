@@ -1,0 +1,66 @@
+# ============================
+# 🚀 Universal .gitignore para Python + Django
+# ============================
+
+# 🐍 Entornos virtuales
+venv/
+.venv/
+ENV/
+env/
+env.bak/
+
+# 📦 Dependencias locales
+*.egg-info/
+.eggs/
+*.egg
+
+# 🔧 Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*$py.class
+
+# ⚙️ Migraciones de Django (opcional: quita si quieres versionarlas)
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# 🗄️ SQLite database (si la usas para pruebas locales)
+db.sqlite3
+
+# 📝 Logs y temporales
+*.log
+*.tmp
+*.bak
+
+# 📂 Archivos de IDEs
+# VSCode
+.vscode/
+.history/
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# Otros
+*.swp
+*.swo
+
+# 🖼️ Archivos estáticos generados
+staticfiles/
+media/
+
+# 📦 Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# 🚫 Instaladores y binarios
+*.exe
+*.msi
+*.dll
+*.so
+*.dmg
+*.pkg
+*.iso
+
+# 📂 Carpetas de instaladores
+instaladores/

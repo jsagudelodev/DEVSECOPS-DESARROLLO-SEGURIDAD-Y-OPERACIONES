@@ -182,3 +182,13 @@ Videos compartidos:
 https://www.youtube.com/@ArmandoRuizTech
 
 https://cloudinary.com/?ref=navto.ai
+
+✅ Notas Importantes
+Para no subir un requirements.txt vacío nunca más:
+
+- Asegúrate de activar el entorno antes de correr pip freeze.
+- Cada vez que instales algo nuevo, actualiza el archivo:
+
+```bash
+pip freeze > requirements.txt
+```
