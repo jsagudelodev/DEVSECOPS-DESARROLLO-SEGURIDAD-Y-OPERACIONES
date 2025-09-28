@@ -56,6 +56,9 @@ webproductos/settings.py
 
 ```bash
 python manage.py migrate
+
+# Forzar la migracion
+python manage.py migrate core --fake
 ```
 
 ▶️ Ejecutar el servidor
@@ -163,6 +166,10 @@ python manage.py runserver
 
 # Cambiando el puerto
 python manage.py runserver 7000
+
+
+
+
 ```
 
 ### 🖼️ Otros
