@@ -1,3 +1,19 @@
 from django.shortcuts import render
+from .models import Producto
 
-# Create your views here.
+
+def lista_productos(request):
+    """
+    ORM (OBJECT RELATION MAPPING)
+    """
+
+    productos=Producto.objects.all()
+    return render (request,"index.html",{"productos":productos})
+
+
+def detalle_producto(request):
+    return  render(request,'detalles.html')
+
+
+def regresar_admin(request):
+     return redirect('/admin/')
