@@ -236,10 +236,6 @@ INSTALLED_APPS = [
 
 ]
 
-### Se regista en el proyecto webproductos
-
-Urls.py
-
 ### Migrar propias tablas APIS
 
 ```bash
