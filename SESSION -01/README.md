@@ -197,44 +197,59 @@ https://cloudinary.com/?ref=navto.ai
 
 ### Session 3
 
-> Creacion nueva Aplicacion para manejos de Apis django-rest
-> python manage.py startapp apis
+### Creacion nueva Aplicacion para manejos de Apis django-rest
 
-> Instalacion django-rest-framework
-> pip install djangorestframework
+python manage.py startapp apis
 
-> Crea nuevo Modelo de Datos
-> models.py
+### Instalacion django-rest-framework
 
-> Registar nuevo sitio para Administrador
-> admin.py
-> admin.site.register(Articulos)
+```bash
+pip install djangorestframework
+```
 
-> Crear archivo serializers (Serializar los datos que se devuelven)
-> serializers.py
+### Crea nuevo Modelo de Datos
 
-> Configurar Rutas Apis que se exponen(apis/Urls)
-> Urls.py
+models.py
 
-> Se crea las vistas (Funciones para devolver los datos)
-> views.py
+### Registar nuevo sitio para Administrador
 
-> Agregar la configuracion en el archivo setting.py
-> INSTALLED_APPS = [
+admin.py
+admin.site.register(Articulos)
+
+### Crear archivo serializers (Serializar los datos que se devuelven)
+
+serializers.py
+
+### Configurar Rutas Apis que se exponen(apis/Urls)
+
+Urls.py
+
+### Se crea las vistas (Funciones para devolver los datos)
+
+views.py
+
+### Agregar la configuracion en el archivo setting.py
+
+INSTALLED_APPS = [
 
     'rest_framework',
 
 ]
 
-> Se regista en el proyecto webproductos
-> Urls.py
+### Se regista en el proyecto webproductos
 
-> Migrar propias tablas APIS
-> python manage.py makemigrations apis
-> python manage.py migrate
+Urls.py
 
-> Se agrega la url de apis al WebProductos
-> path('api/',include('apis.urls'))
+### Migrar propias tablas APIS
+
+```bash
+ python manage.py makemigrations apis
+ python manage.py migrate
+```
+
+### Se agrega la url de apis al WebProductos
+
+path('api/',include('apis.urls'))
 
 ✅ Notas Importantes
 Para no subir un requirements.txt vacío nunca más:
