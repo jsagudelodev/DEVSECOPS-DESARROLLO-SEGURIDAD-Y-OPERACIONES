@@ -184,11 +184,57 @@ Se utilizó Bootstrap 5.3
 👉 Documentación oficial : https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
 📂 Recursos
+
+Url Compartidas:
+https://insomnia.rest/
+https://www.django-rest-framework.org/api-guide/views/
+
 Videos compartidos:
 
 https://www.youtube.com/@ArmandoRuizTech
 
 https://cloudinary.com/?ref=navto.ai
+
+### Session 3
+
+> Creacion nueva Aplicacion para manejos de Apis django-rest
+> python manage.py startapp apis
+
+> Instalacion django-rest-framework
+> pip install djangorestframework
+
+> Crea nuevo Modelo de Datos
+> models.py
+
+> Registar nuevo sitio para Administrador
+> admin.py
+> admin.site.register(Articulos)
+
+> Crear archivo serializers (Serializar los datos que se devuelven)
+> serializers.py
+
+> Configurar Rutas Apis que se exponen(apis/Urls)
+> Urls.py
+
+> Se crea las vistas (Funciones para devolver los datos)
+> views.py
+
+> Agregar la configuracion en el archivo setting.py
+> INSTALLED_APPS = [
+
+    'rest_framework',
+
+]
+
+> Se regista en el proyecto webproductos
+> Urls.py
+
+> Migrar propias tablas APIS
+> python manage.py makemigrations apis
+> python manage.py migrate
+
+> Se agrega la url de apis al WebProductos
+> path('api/',include('apis.urls'))
 
 ✅ Notas Importantes
 Para no subir un requirements.txt vacío nunca más:
