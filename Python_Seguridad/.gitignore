@@ -1,3 +1,7 @@
 venv/
 *.venv/
 */seg-venv/
+
+# Ignorar entorno virtual
+seg-env/
+Python_Seguridad/seg-env/
